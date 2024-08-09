@@ -71,7 +71,8 @@ async def main_menu(message):
 async def get_formulas(callbttn):
     await callbttn.message.answer("для мужчин: (10 x вес (кг) + 6.25 x рост (см) – 5 x возраст (г) + 5) x 1.55")
     await callbttn.answer()
-
+            
+"""Выбираем продукт и покупаем"""
 @dp.message_handler(text="Купить")
 async def get_buying_list(message):
     for i in range(1, 5):
